@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "display": "standalone",
   "private": true,
-  "homepage": "https://testowa.com.pl/app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
