@@ -1,0 +1,113 @@
+.btn-success {
+  @include button-variant(
+    $success,
+    darken($success, 7.5%),
+    darken($success, 10%),
+    lighten($success, 5%),
+    lighten($success, 10%),
+    darken($success, 30%)
+  );
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    color: $light;
+  }
+}
+
+.custom_Nav_container {
+  height: 160px;
+
+  @media (max-width: 576px) {
+    height: 120px;
+
+    & .custom_ContactRequest_Icon {
+      min-width: 120px;
+    }
+  }
+}
+
+.custom_Logo {
+  @media (max-width: 576px) {
+    width: 50% !important;
+    padding-left: 16px !important;
+    padding-top: 16px !important;
+  }
+}
+
+.custom_ContactRequest_Icon {
+  width: 20%;
+  min-width: 160px;
+  max-width: 160px;
+  border-radius: 0 0 0 75px;
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.custom_Content_container {
+  height: calc(100vh - 160px);
+  padding-bottom: 32px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    & .custom_mood_button {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  @media (max-width: 576px) {
+    height: calc(100vh - 120px);
+  }
+}
+
+.custom_Modal_dialog {
+  @media (max-width: 576px) {
+    max-width: none !important;
+  }
+}
+
+.custom_mood_button {
+  min-width: 200px;
+  max-width: 260px;
+}
+
+.custom_form_container {
+  max-width: 90% !important;
+  @media (min-width: 576px) {
+    padding: 2rem 3rem !important;
+  }
+  @media (min-width: 768px) {
+    padding: 2rem 4rem !important;
+    max-width: 600px !important;
+    min-width: 450px !important;
+  }
+  @media (min-width: 992px) {
+    padding: 2rem 5rem !important;
+    max-width: 600px !important;
+    min-width: 450px !important;
+
+    .btn {
+      width: 35% !important;
+    }
+  }
+  @media (min-width: 1200px) {
+    padding: 2rem 6rem !important;
+    max-width: 600px !important;
+    min-width: 450px !important;
+    .btn {
+      width: 35% !important;
+    }
+  }
+  @media (min-width: 1440px) {
+    padding: 2rem 8rem !important;
+    max-width: 600px !important;
+    min-width: 450px !important;
+    .btn {
+      width: 35% !important;
+    }
+  }
+}
